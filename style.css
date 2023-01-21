@@ -17,38 +17,48 @@ body {
     align-self: stretch;
     align-items: center;
     justify-content: space-between;
-    background-color: #1F2937;
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: #0d1724;
+    padding: 20px 10% 20px 10%;
 }
 
 .logo {
+    display: flex;
+    height: 100px;
+    width: 120px;
     color: #F9FAF8;
     font-size: 24px;
     font-weight: bold;
 }
 
-a {
-    color: #F9FAF8;
-    text-decoration: none;
+.logo h1 {
+    align-self: center;
+    margin: 0px;
+    padding: 0px;
 }
 
-.links ul {
+.links {
     display: flex;
+    margin-left: auto;
+    gap: 32px;
     flex-wrap: wrap;
-    list-style-type: none;
-    gap: 20px;
+    max-width: 50%;
+}
+
+.links a {
+    color: #F9FAF8;
+    text-decoration: none;
 }
 
 .hero-container {
     display: flex;
     align-items: center;
     align-self: stretch;
+    justify-content: space-between;
     gap: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 20px 10% 20px 10%;
     background-color: #1F2937;
-    height: 300px;
+    min-height: 300px;
+    flex: 1;
 }
 
 .awesome-container {
@@ -84,12 +94,12 @@ a {
 
 .placeholder {
     display: flex;
-    flex: 0 1 50%;
 }
 
 .placeholder img {
-    max-width: 100%;
-    height: auto;
+    flex: 0 1 auto;
+    max-height: 300px;
+    width: auto;
 }
 
 .card-info-container {
@@ -98,37 +108,44 @@ a {
     padding-left: 10%;
     padding-right: 10%;
     flex-direction: column;
-    height: 300px;
+    min-height: 300px;
+    padding: 20px 10% 20px 10%;
 }
 
 .info {
     text-align: center;
-    padding: 20px;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    margin-bottom: 20px;
 }
 
 .card-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
 .card-wrap {
     display: flex;
     flex-direction: column;
-    max-width: 120px;
+    max-width: 160px;
     flex: 0 0 auto;
 }
 
 .card {
-    width: 120px;
-    height: 120px;
+    display: flex;
+    justify-content: center;
     border: 2px solid #3882F6;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 150px;
+    height: 175px;
 }
 
 .card-text {
@@ -138,8 +155,7 @@ a {
 
 .quote-container {
     display: flex;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 20px 10% 20px 10%;
     flex-direction: column;
     align-self: stretch;
     align-items: center;
